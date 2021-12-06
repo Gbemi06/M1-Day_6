@@ -68,20 +68,46 @@ console.log(me)
     Write a function called dice; it should randomize an integer number between 1 and 6.
 */
 
-
+dice = function(x) {
+    let random = Math.random() * (6 - 1) + 1
+    random = Math.floor(random) + 1
+    return random
+}
+console.log(dice(0))
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
+whoIsBigger = function(x, y) {
+    if (x > y)
+{
+    return x
+} else if (y > x) {
+    return y
+} else {
+    return "the numbers are the same"
+}}
+
+console.log(whoIsBigger(3, 1))
 
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
 
+splitMe = function(str){
+    let strings = str.split(" ")
+    return strings
+
+}
+let strings = "I am here"
+console.log(splitMe(strings))
+
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
+
+
 
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
