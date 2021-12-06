@@ -27,11 +27,11 @@ console.log(sum)
 /* EXERCISE C
     Create a variable called random and assign to it a random number between 0 and 20 (it should be randomly created at each execution).
 */
- let random = Math.random() * (20 - 0) + 0
+ let random = Math.random() * (20)
  console.log(random)
 
  /* random number without floating point */
-random = Math.floor(random) + 0
+random = Math.floor(random)
 console.log(random)
 
 /* EXERCISE D
@@ -69,8 +69,8 @@ console.log(me)
 */
 
 dice = function(x) {
-    let random = Math.random() * (6 - 1) + 1
-    random = Math.floor(random) + 1
+    let random = Math.random() * (6)
+    random = Math.floor(random)
     return random
 }
 console.log(dice(0))
@@ -113,6 +113,7 @@ console.log(splitMe(strings))
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
+
 
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
